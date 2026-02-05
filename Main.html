@@ -1,133 +1,162 @@
 <!DOCTYPE html>
-<html>
-
-
+<html lang="en">
 
 <head>
-
-  <title>Mud Goblin</title>
-
-  <style>
-
-    
-    h1, h2 {margin: 0 ;}
+    <meta charset="UTF-8">
+    <title>Mud Goblin</title>
+    <link rel="icon" type="image/png" href="/favicon.jpeg">
 
 
-    .myDiv {
-      text-align: left;
-      width: 400px;
-      margin: auto;
-    }
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
 
-    
-    table, th, td {
-      border: 1px solid black;
-      border-collapse: collapse;
-    }
+        h1, h2 {
+            margin: 0;
+        }
 
-    tr:nth-child(even) {
-      background-color: rgba(150, 250, 250, 1);
-    }
+        .container {
+            width: 60%;
+            margin: auto;
+        }
 
-    th:nth-child(even),
-    td:nth-child(even) {
-      background-color: rgba(150, 250, 250, 0);
-    }
-  </style>
+        .image-box img {
+            width: 612px;
+            height: 406px;
+        }
 
-      <br><br>
-  <h1 style="text-align:center; font-size:300%;"><b>Meet Mud Goblin</b> </h1>
+        .info-box {
+            width: 60%;
+            margin: 20px auto;
+            border: 1px solid black;
+        }
 
-  <center>
-    <h1>People Say "I eat mud" Usually I Don't.</h1>
-  </center>
+        .row {
+            display: flex;
+            border-bottom: 1px solid black;
+        }
 
+        .row div {
+            flex: 1;
+            padding: 10px;
+            border-right: 1px solid black;
+        }
 
-  <p style="text-align:center; font-size:300%;">
-    <img src="orengotan.jpg" style="width:612px;height:406px;">
-  </p>
+        .row div:last-child {
+            border-right: none;
+        }
 
+        .row:nth-child(even) {
+            background-color: rgba(150, 250, 250, 1);
+        }
+
+        .qualities {
+            width: 400px;
+            margin: 40px auto;
+            text-align: left;
+        }
+
+        .button-box {
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
 
-  <center>
+    <div class="container">
 
-    <table style="width:50%">
-      <tr>
-        <th>Common Name</th>
-        <th>Orangutans</th>
-      </tr>
-      <tr>
-        <th>Scientific Name</th>
-        <th>Pongo</th>
-      </tr>
-      <tr>
-        <th>Type</th>
-        <th>Mammals</th>
-      </tr>
-      <tr>
-        <th>Average life span in the wild</th>
-        <th>30 to 40 years</th>
-      </tr>
-      <tr>
-        <th>Standing Height</th>
-        <th>4 to 5 Feets</th>
-      </tr>
-      <tr>
-        <th>Weight</th>
-        <th>30 to 80 kg</th>
-      </tr>
-    </table>
+        <br><br>
 
+        <h1 style="font-size:300%;"><b>Meet Mud Goblin</b></h1>
+        <h2>People Say "I eat mud" Usually I Don't.</h2>
 
+        <br>
 
-  </center>
+        <div class="image-box">
+            <img src="orengotan.jpg" alt="Orangutan">
+        </div>
 
-  <div class="myDiv">
+        <!-- Information Section -->
+        <div class="info-box">
 
-    <h2><br><br>Some Qualities</h2>
+            <div class="row">
+                <div><b>Common Name</b></div>
+                <div>Orangutans</div>
+            </div>
 
-    <ul>
-      <li><b>Usually Shy</li>
-      <li><b>Doesn't Talk Often</li>
-      <li><b>Believes Consciousness is a Curse </li>
-      <li><b>Not Intrested in Most of the Things</li>
-      <li><b>Not a big fan of the so called mordern Humans</li>
+            <div class="row">
+                <div><b>Scientific Name</b></div>
+                <div>Pongo</div>
+            </div>
 
+            <div class="row">
+                <div><b>Type</b></div>
+                <div>Mammals</div>
+            </div>
 
+            <div class="row">
+                <div><b>Average Life Span in the Wild</b></div>
+                <div>30 to 40 years</div>
+            </div>
 
-    </ul>
+            <div class="row">
+                <div><b>Standing Height</b></div>
+                <div>4 to 5 feet</div>
+            </div>
 
-  </div>
+            <div class="row">
+                <div><b>Weight</b></div>
+                <div>30 to 80 kg</div>
+            </div>
 
+        </div>
 
-  <br><br>
+        <!-- Qualities Section -->
+        <div class="qualities">
 
-  <center>
-    <h1>Let's have Some Lunch Together</h1>
-    
-    <br>
+            <h2>Some Qualities</h2>
 
-    <button type="button" onclick="window.location.href='Lunch.html';">Contact Now!</button>
+            <ul>
+                <li><b>Usually Shy</b></li>
+                <li><b>Doesn't Talk Often</b></li>
+                <li><b>Believes Consciousness is a Curse</b></li>
+                <li><b>Not Interested in Most Things</b></li>
+                <li><b>Not a Big Fan of Modern Humans</b></li>
+            </ul>
 
+        </div>
 
-  <br><br><br><br>
+        <!-- Buttons -->
+        <div class="button-box">
 
-    <h1>Do you live with an Orengotan?</h1>
-    <h2>Share some Insights with us.</h2>
+            <h1>Let's Have Some Lunch Together</h1>
+            <br>
 
-    <br>
+            <button onclick="window.location.href='Lunch.html';">Contact Now!</button>
 
-    <button type="button" onclick="window.location.href='Insights.html';">Share Now!</button>
+            <br><br><br>
 
-    
+            <h1>Do You Live with an Orangutan?</h1>
+            <h2>Share Some Insights with Us.</h2>
 
-  </center>
+            <br>
 
+            <button onclick="window.location.href='Insights.html';">Share Now!</button>
 
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+
+        <br><br><br>
+
+    </div>
 
 </body>
-
 </html>

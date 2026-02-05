@@ -1,81 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <title>Mud Goblin</title>
 
-  <title>Lunch with Mud Goblin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
 
+        .form-container {
+            width: 400px;
+            margin: auto;
+            margin-top: 80px;
+            text-align: left;
+        }
 
+        h1 {
+            text-align: center;
+        }
 
-    <center>
-    
-        <br><br><br><br><br><br><br>
+        .form-group {
+            margin-bottom: 15px;
+        }
 
-      
-      <form>
-        
-        <h1>Your Details:</h1>
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
 
-        <label for="q">Name:</label>
-        <input required type="text" id="f" name="f" placeholder="Enter your name" ><br><br>
-        <label for="l">Email:</label>
-        <input required type="text" id="l" name="l" value="@gmail.com" ><br><br>
+        .button-box {
+            text-align: center;
+            margin-top: 20px;
+        }
 
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
 
-                
-        <h1>Orengotan Details:</h1>
-        
-        <label for="q">Name:</label>
-        <input required type="text" id="f" name="f" placeholder="Enter Orengotan name" ><br><br>
-        <label for="l">Forest:</label>
-        <input required type="text" id="l" name="l"><br><br>
-        <label for="l">Age:</label>
-        <input required type="text" id="l" name="l"><br><br>
+<body>
 
+    <div class="form-container">
 
-        <label for="w">Gender:</label>
-        <select id="w">
-          <option value="a">Male</option>
-          <option value="b">Female</option>
-        </select>
-        <br><br>
+        <form>
 
+            <h1>Your Details</h1>
 
+            <div class="form-group">
+                <label>Name:</label>
+                <input required type="text" placeholder="Enter your name">
+            </div>
 
+            <div class="form-group">
+                <label>Email:</label>
+                <input required type="email" placeholder="example@gmail.com">
+            </div>
 
-        <label for="w">What does he usually eat:</label>
-        <select id="w">
-          <option value="a">Select one</option>
-          <option value="b">Insects</option>
-          <option value="d">Soil</option>
-          <option value="e">Corn</option>
-          <option value="f">Mud</option>
-        </select>
+            <h1>Orangutan Details</h1>
 
-        <br><br>
+            <div class="form-group">
+                <label>Name:</label>
+                <input required type="text" placeholder="Enter Orangutan name">
+            </div>
 
-        <label for="w">Cannibal? </label>
-        <select id="w">
-        <option value="a">Select one</option>
-        <option value="b">Always</option>
-          <option value="a">Sometimes</option>
-          <option value="b">Rarely</option>
-          <option value="e">Couldn't find any</option>
-          <option value="d">Lost taste</option>
-        </select>
+            <div class="form-group">
+                <label>Forest:</label>
+                <input required type="text">
+            </div>
 
+            <div class="form-group">
+                <label>Age:</label>
+                <input required type="number">
+            </div>
 
-        <br><br>
+            <div class="form-group">
+                <label>Gender:</label>
+                <select>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
 
-        <button type="button" onclick="window.location.href='Main.html';" >Submit</button>
+            <div class="form-group">
+                <label>What does it usually eat:</label>
+                <select>
+                    <option>Select one</option>
+                    <option>Insects</option>
+                    <option>Soil</option>
+                    <option>Corn</option>
+                    <option>Mud</option>
+                </select>
+            </div>
 
-      </form>
+            <div class="form-group">
+                <label>Cannibal?</label>
+                <select>
+                    <option>Select one</option>
+                    <option>Always</option>
+                    <option>Sometimes</option>
+                    <option>Rarely</option>
+                    <option>Couldn't find any</option>
+                    <option>Lost taste</option>
+                </select>
+            </div>
 
+            <div class="button-box">
+                <button type="button" onclick="window.location.href='Main.html';">
+                    Submit
+                </button>
+            </div>
 
+        </form>
 
-      <br><br><br><br><br><br><br><br>
-
+    </div>
 
 </body>
-
 </html>
